@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  <style>
+ table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  td table {
+    border: none;
+    width: 100%;
+  }
+  td table td {
+    border: none;
+    padding: 0;
+  }
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .registration-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .form-group input[type="number"] { 
+    width: 50px;
+  }
+
+  .form-group .error-message {
+    color: red;
+    font-size: 12px;
+  }
+
+  .form-group button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+    </style>
+  </head>
+
+
+  <body>
+    <header>LIBRARY SYSTEM</header>
+    <header>BOOKS</header>
+    <header>REGISTER</header>
+    <table>
+        <tr>
+          <th>Book ID</th>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Genre</th>
+          <th>Availability</th>
+        </tr>
+        <tr>
+          <td>001</td>
+          <td>
+            The Enchanted Forest
+            <table>
+              <tr>
+                <td>Publication Date: 2022</td>
+              </tr>
+              <tr>
+                <td>Page Count: 320</td>
+              </tr>
+              <tr>
+                <td>ISBN: 978-1-234567-89-0</td>
+              </tr>
+            </table>
+          </td>
+          <td>Alice Johnson</td>
+          <td>Fantasy</td>
+          <td>In Stock</td>
+        </tr>
+
+   
+      <tr>
+        <td>002</td>
+        <td>
+          The gullivers travel
+          <table>
+            <tr>
+              <td>Publication Date: 2023</td>
+            </tr>
+            <tr>
+              <td>Page Count: 320</td>
+            </tr>
+            <tr>
+              <td>ISBN: 978-2-546987-89-0</td>
+            </tr>
+          </table>
+        </td>
+        <td>sam tomshon</td>
+        <td>comedy</td>
+        <td>In Stock</td>
+      </tr>
+      <tr>
+        <td>003</td>
+        <td>
+          the fairy tales
+          <table>
+            <tr>
+              <td>Publication Date: 2016</td>
+            </tr>
+            <tr>
+              <td>Page Count: 240</td>
+            </tr>
+            <tr>
+              <td>ISBN: 564-2-789654-89-1</td>
+            </tr>
+          </table>
+        </td>
+        <td>tony stark</td>
+        <td>romance</td>
+        <td>In Stock</td>
+      </tr>
+      <tr>
+        <td>004</td>
+        <td>
+         Simon in India
+          <table>
+            <tr>
+              <td>Publication Date: </td>
+            </tr>
+            <tr>
+              <td>Page Count: </td>
+            </tr>
+            <tr>
+              <td>ISBN: 654-1-789654-25-1</td>
+            </tr>
+          </table>
+        </td>
+        <td>Macheal ferendis</td>
+        <td>autobiography</td>
+        <td>In Stock</td>
+      </tr>
+
+      <tr>
+        <td>005</td>
+        <td>
+         The Vincci code
+          <table >
+            <tr>
+              <td>Publication Date:2005 </td>
+            </tr>
+            <tr>
+              <td>Page Count:450 </td>
+            </tr>
+            <tr>
+              <td>ISBN: 545-1-36987-89-8</td>
+            </tr>
+          </table>
+        </td>
+        <td>Dan Brown</td>
+        <td>Mystery</td>
+        <td>Not available</td>
+      </tr>
+    </table>
+ 
+    
+
+    <div class="registration-form">
+        <form>
+          <div class="form-group">
+            <label for="first-name">First Name *</label>
+            <input type="text" id="first-name" name="first-name" required>
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name *</label>
+            <input type="text" id="last-name" name="last-name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="date-of-birth">Date of Birth *</label>
+            <input type="date" id="date-of-birth" name="date-of-birth" required>
+          </div>
+          <div class="form-group">
+            <label for="age">Age *</label>
+            <input type="number" id="age" name="age" min="5" max="100" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password *</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <div class="form-group">
+            <label for="confirm-password">Confirm Password *</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+          </div>
+          <button type="submit">Register</button>
+        </form>
+      </div>
+    </body>
+    </html>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+ 
+
+
